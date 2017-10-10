@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+类名 -->
+<mapper namespace="org.shunly.ApplicationMapper">
+
+    <resultMap type="Application" id="applicationResult">
+    	<!-- 数据表和实体类一一对应 ，id映射主键，result映射普通
+    	column：   数据表的列名或别名
+    	jdbcType：数据表的类型
+    	property：映射到JavaBean的属性名称
+    	javaType：完整的类名或者类型别名，如果映射到HashMap，则必须指定
+    	typeHandler：复写类型处理器。完整类名或类型别名。
+    	 -->
+		<id column="id" jdbcType="INTEGER" property="id"/>
+		<result column="name" jdbcType="VARCHAR" property="name"/>
+		<result column="qq" jdbcType="INTEGER" property="qq"/>
+		<result column="position" jdbcType="VARCHAR" property="position"/>
+		<result column="time" jdbcType="BIGINT" property="time"/>
+		<result column="college" jdbcType="VARCHAR" property="college"/>
+		<result column="online_id" jdbcType="INTEGER" property="onlineId"/>
+		<result column="url" jdbcType="VARCHAR" property="url"/>
+		<result column="ambition" jdbcType="VARCHAR" property="ambition"/>
+		<result column="senior" jdbcType="VARCHAR" property="senior"/>
+		<result column="info" jdbcType="VARCHAR" property="info"/>
+		
+		<!-- 通过实体类构造方法映射 注意顺序一致
+		<constructor>
+			<idArg javaType="int" column="id"/>
+			<arg javaType="String" column="name"/>
+			<arg javaType="int" column="qq"/>
+			<arg javaType="String" column="position"/>
+			<arg javaType="long" column="time"/>
+			<arg javaType="String" column="college"/>
+			<arg javaType="int" column="online_id"/>
+			<arg javaType="String" column="url"/>
+			<arg javaType="String" column="ambition"/>
+			<arg javaType="String" column="senior"/>
+			<arg javaType="String" column="info"/>
+		</constructor>
+		-->
+	</resultMap>
+	
+	<!-- insert语句 
+		id=标识符
+		parameterType=完整的实体类名或别名
+	-->
+	<insert id="insert" parameterType="Application">
+		insert into app1(name,qq,position,time,college,online_id,url,ambition,senior,info)
+					values(#{name},#{qq},#{position},#{time},#{college},#{onlineId},
+					#{url},#{ambition},#{senior},#{info});
+	</insert>
+	
+	<delete id="delete" parameterType="Application">
+		delete from app1 where id=#{id};
+	</delete>
+	
+	<update id="update" parameterType="Application" >
+		update app1 set
+		name=#{name},qq=#{qq},position=#{position},
+		time=#{time},college=#{college},online_id=#{onlineId},url=#{url},ambition=#{ambition},senior=#{senior},info=#{info}
+		where id=#{id};
+	
+	</update>
+	
+	<!-- sql仅用于复用？ -->
+	<sql id="selectAll" >
+        select * from app1
+ 	</sql>
+ 	
+	<select id="getById" parameterType="Application"  resultType="Application">
+		<include refid="selectAll"/>
+			where id=#{id};
+	</select>
+	
+	<select id="getByName"  parameterType="Application"  resultType="Application">
+		<include refid="selectAll"/>
+			where name=#{name};
+	</select>
+	
+	<select id="listApplication" parameterType="Application" resultType="Application">
+		 <include refid="selectAll"/>
+	</select>
+</mapper>

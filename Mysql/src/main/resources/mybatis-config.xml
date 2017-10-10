@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>  
+    <!-- MyBatis的配置文件中现在只是一个空壳，其他必要配置已放在spring的配置中 -->  
+    
+    <!-- 映射类别名 -->
+    <typeAliases>
+    	<typeAlias alias="Application" type="org.shunly.Application"/>
+    </typeAliases>
+    <mappers>  
+        <mapper resource="ApplicationMapper.xml"/>  
+    </mappers>  
+</configuration> 
