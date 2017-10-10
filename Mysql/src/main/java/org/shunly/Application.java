@@ -131,9 +131,10 @@ public class Application {
 
 	@Override
 	public String toString() {
-		return "Application id=" + id + ", name=" + name + ", qq=" + qq + ", position=" + position + ", time=" + time
-				+ ", college=" + college + ", onlineId=" + onlineId + ", url=" + url + ", ambition=" + ambition
-				+ ", senior=" + senior + ", info=" + info + "\n";
+		return "报名信息：\n"
+				+ " id=" + id + ",\n name=" + name + ",\n qq=" + qq + ",\n position=" + position + ",\n time=" + time
+				+ ",\n college=" + college + ",\n onlineId=" + onlineId + ",\n url=" + url + ",\n ambition=" + ambition
+				+ ",\n senior=" + senior + ",\n info=" + info + "\n";
 	}
 	
 	

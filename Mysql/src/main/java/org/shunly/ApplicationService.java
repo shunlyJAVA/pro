@@ -17,19 +17,18 @@ public class ApplicationService  {
 	public static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		int n;
+		int n = -1;
 		do {
 			System.out.println(mainmenu());
 			n = sc.nextInt();
 			switch (n) {
-				case 1:applicationMapper.insert(add());break;
+				case 1:add();break;
 				case 2:System.out.println("请输入要删除的id：");deleteById(sc.nextInt());break;
-				case 3:applicationMapper.update(update());break;
+				case 3:update();break;
 				case 4:System.out.println("请输入要查询的id：");selectById(sc.nextInt());break;
 				case 5:System.out.println("请输入要查询的名字：");selectByName(sc.next());;break;
 				case 0:System.out.println("程序结束");break;
 				default:System.out.println("输入错误，请重新输入");break;
-			
 			}
 		}while(n!=0);
 		sc.close();
@@ -49,7 +48,7 @@ public class ApplicationService  {
 				+"*******************************\n"
 				;
 	}
-	public static Application add() {
+	public static int add() {
 		Application app = new Application();			
 		System.out.println("请输入报名相关信息");
 		System.out.println("姓名：");app.setName(sc.next());
@@ -62,26 +61,29 @@ public class ApplicationService  {
 		System.out.println("立愿：");app.setAmbition(sc.next());
 		System.out.println("师兄：");app.setSenior(sc.next());
 		System.out.println("从何处了解：");app.setInfo(sc.next());
-		return app;
+		applicationMapper.insert(app);
+		return app.getId();
 	}
 	
-	public static void deleteById(int id) {
+	public static boolean deleteById(int id) {
 		
 		if(applicationMapper.getById(id)!=null) {
 			applicationMapper.delete(id);
 			System.out.println("已删除");
+			return true;
 		}
 		else {
 			System.out.println("未查询到此id");
+			return false;
 		}
 	}
 	
-	public static Application update() {
+	public static boolean update() {
 		Application app = new Application();
 		System.out.println("请输入要修改的id：");app.setId(sc.nextInt());
 		if(applicationMapper.getById(app.getId()) == null) {
 			System.out.println("此id未添加，请先添加后再更新");
-			return null;
+			return false;
 		}
 		else {
 		System.out.println("姓名：");app.setName(sc.next());
@@ -94,8 +96,9 @@ public class ApplicationService  {
 		System.out.println("立愿：");app.setAmbition(sc.next());
 		System.out.println("师兄：");app.setSenior(sc.next());
 		System.out.println("从何处了解：");app.setInfo(sc.next());
+		applicationMapper.insert(app);
 		System.out.println("已添加");
-		return app;
+		return true;
 		}
 	}
 	public static void selectById(int id) {
@@ -120,7 +123,5 @@ public class ApplicationService  {
 			return;
 		}
 	}
-	
-
 	
 }
