@@ -31,36 +31,36 @@ public class Application {
 	 * @param info 从何处了解到修真院
 	 */
 
-	public Application(int id, String name, int qq, String position, long time, String college, int onlineId,
-			String url, String ambition, String senior, String info) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.qq = qq;
-		this.position = position;
-		this.time = time;
-		this.college = college;
-		this.onlineId = onlineId;
-		this.url = url;
-		this.ambition = ambition;
-		this.senior = senior;
-		this.info = info;
-	}
-	
-	public Application( String name, int qq, String position, long time, String college, int onlineId,
-			String url, String ambition, String senior, String info) {
-		super();
-		this.name = name;
-		this.qq = qq;
-		this.position = position;
-		this.time = time;
-		this.college = college;
-		this.onlineId = onlineId;
-		this.url = url;
-		this.ambition = ambition;
-		this.senior = senior;
-		this.info = info;
-	}
+//	public Application(int id, String name, int qq, String position, long time, String college, int onlineId,
+//			String url, String ambition, String senior, String info) {
+//		super();
+//		this.id = id;
+//		this.name = name;
+//		this.qq = qq;
+//		this.position = position;
+//		this.time = time;
+//		this.college = college;
+//		this.onlineId = onlineId;
+//		this.url = url;
+//		this.ambition = ambition;
+//		this.senior = senior;
+//		this.info = info;
+//	}
+//	
+//	public Application( String name, int qq, String position, long time, String college, int onlineId,
+//			String url, String ambition, String senior, String info) {
+//		super();
+//		this.name = name;
+//		this.qq = qq;
+//		this.position = position;
+//		this.time = time;
+//		this.college = college;
+//		this.onlineId = onlineId;
+//		this.url = url;
+//		this.ambition = ambition;
+//		this.senior = senior;
+//		this.info = info;
+//	}
 	
 	public int getId() {
 		return id;

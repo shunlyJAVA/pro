@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+类名 -->
+<mapper namespace="org.shunly.application.dao.ApplicationMapper">
+
+   	<!-- insert语句
+		id=标识符
+		parameterType=完整的实体类名或别名
+	-->
+	<insert id="insert" parameterType="Application">
+		insert into app1(name,qq,position,time,college,online_id,url,ambition,senior,info)
+					values(#{name},#{qq},#{position},#{time},#{college},#{onlineId},
+					#{url},#{ambition},#{senior},#{info});
+	</insert>
+	
+	<delete id="delete" parameterType="Application">
+		delete from app1 where id=#{id};
+	</delete>
+	
+	<update id="update" parameterType="Application" >
+		update app1 set
+		name=#{name},qq=#{qq},position=#{position},
+		time=#{time},college=#{college},online_id=#{onlineId},url=#{url},ambition=#{ambition},senior=#{senior},info=#{info}
+		where id=#{id};
+	
+	</update>
+	
+	<!-- sql仅用于复用？ -->
+	<sql id="selectAll" >
+        select * from app1
+ 	</sql>
+ 	
+	<select id="getById" parameterType="Application"  resultType="Application">
+		<include refid="selectAll"/>
+			where id=#{id};
+	</select>
+	
+	<select id="getByName"  parameterType="Application"  resultType="Application">
+		<include refid="selectAll"/>
+			where name=#{name};
+	</select>
+	
+	<select id="listApplication" parameterType="Application" resultType="Application">
+		 <include refid="selectAll"/>
+	</select>
+</mapper>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration status="error">
+    <!--先定义所有的appender-->
+    <appenders>
+        <!--这个输出控制台的配置-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="trace" />
+            <!--这个都知道是输出日志的格式-->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>
+        </Console>
+        <!--文件会打印出所有信息，这个log每次运行程序会自动清空，由append属性决定，这个也挺有用的，适合临时测试用-->
+        <File name="file" fileName="log/test.log" append="false">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>
+        </File>
+		
+		<!--trace-->
+        <RollingFile name="RollingFile_trace" fileName="logs/trace/trace.log"
+        	filePattern="logs/trace/$${date:yyyy-MM}/trace-%d{MM-dd-yyyy}-%i.log" >
+            <Filters>
+            	<ThresholdFilter level="debug" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>         
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="1MB"/>
+        </RollingFile>
+		
+		<!--debug-->
+        <RollingFile name="RollingFile_debug" fileName="logs/debug/debug.log"
+        	filePattern="logs/debug/$${date:yyyy-MM}/debug-%d{MM-dd-yyyy}-%i.log" >
+            <Filters>
+            	<ThresholdFilter level="info" onMatch="DENY" onMismatch="NEUTRAL"/>
+            	<ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>         
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="1MB"/>
+        </RollingFile>
+		
+		 <!--info-->
+        <RollingFile name="RollingFile_info" fileName="logs/info/info.log"
+        	filePattern="logs/info/$${date:yyyy-MM}/info-%d{MM-dd-yyyy}-%i.log" >
+            <Filters>
+            	<ThresholdFilter level="warn" onMatch="DENY" onMismatch="NEUTRAL"/>
+            	<ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>         
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="1MB"/>
+        </RollingFile>
+
+        <!--warn-->
+        <RollingFile name="RollingFile_warn" fileName="logs/warn/warn.log"
+        	filePattern="logs/warn/$${date:yyyy-MM}/warn-%d{MM-dd-yyyy}-%i.log" >
+            <Filters>
+            	<ThresholdFilter level="error" onMatch="DENY" onMismatch="NEUTRAL"/>
+            	<ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>         
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="1MB"/>
+        </RollingFile>
+        
+        <!-- error -->
+        <RollingFile name="RollingFile_error" fileName="logs/error/error.log"
+        	filePattern="logs/error//$${date:yyyy-MM}/error-%d{MM-dd-yyyy}-%i.log" >
+            <Filters>
+            	<ThresholdFilter level="fatal" onMatch="DENY" onMismatch="NEUTRAL"/>
+            	<ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>         
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="1MB"/>
+        </RollingFile>
+        
+        <!-- fatal -->
+        <RollingFile name="RollingFile_fatal" fileName="logs/fatal/fatal.log"
+        	filePattern="logs/fatal/$${date:yyyy-MM}/fatal-%d{MM-dd-yyyy}-%i.log" >
+            <Filters>
+            	<ThresholdFilter level="fatal" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>         
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="1MB"/>
+        </RollingFile>
+        
+    </appenders>
+    <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->
+    <loggers>
+        <!--建立一个默认的root的logger-->
+        <root level="trace">
+           
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingFile_trace"/>
+            <appender-ref ref="RollingFile_debug"/>
+            <appender-ref ref="RollingFile_info"/>
+            <appender-ref ref="RollingFile_warn"/>
+            <appender-ref ref="RollingFile_error"/>
+            <appender-ref ref="RollingFile_fatal"/>
+        </root>
+
+    </loggers>
+</configuration>
