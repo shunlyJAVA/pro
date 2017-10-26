@@ -19,7 +19,7 @@ import java.util.Map;
 @RequestMapping("/application")
 public class ApplicationController {
 
-    private Logger logger = LogManager.getLogger(ApplicationController.class.getName());
+//    private Logger logger = LogManager.getLogger(ApplicationController.class);
 
     @Autowired
     private ApplicationService applicationService;
@@ -31,9 +31,9 @@ public class ApplicationController {
      * @return get
      */
     @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
-    public @ResponseBody String id(@PathVariable int id, Model model){
+    public String id(@PathVariable int id, Model model){
         Application application = applicationService.getById(id);
-        logger.info("id查询:"+ application);
+//        logger.info("id查询:"+ application);
         model.addAttribute("get", application);
         return  "get";
     }
@@ -47,7 +47,7 @@ public class ApplicationController {
     @RequestMapping(value = "/name/{name}", method = RequestMethod.GET)
     public String name(@PathVariable String name,Model model){
         Application application = applicationService.getByName(name);
-        logger.info("姓名查询：" + application);
+//        logger.info("姓名查询：" + application);
         model.addAttribute("get",application);
         return "get";
     }
@@ -61,7 +61,7 @@ public class ApplicationController {
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Model model, HttpServletRequest httpServletRequest){
         List<Application> list = applicationService.listApplication();
-        logger.info("List哟~：" + list);
+//        logger.info("List哟~：" + list);
         model.addAttribute("list",list);
         return "list";
     }
@@ -76,7 +76,7 @@ public class ApplicationController {
         List<Application> applications = applicationService.listApplication();
         for(Application a: applications){
             System.out.println(a);
-            logger.info("json返回方式的：" + a);
+//            logger.info("json返回方式的：" + a);
         }
         Map<String, Object> map = new HashMap<String, Object>(2);
         map.put("list2",applications);
@@ -86,14 +86,13 @@ public class ApplicationController {
     /**
      * 根据id删除信息
      * @param id id
-     * @param model 1
      * @return delete
      */
     @RequestMapping(value = "/id/{id}", method = RequestMethod.DELETE)
-    public String delete(@PathVariable int id, Model model){
+    public String delete(@PathVariable int id){
        applicationService.delete(id);
-       logger.info("id删除");
-        return "delete";
+//       logger.info("id删除");
+        return "redirect:/application/list";
     }
 
     /**
@@ -102,9 +101,11 @@ public class ApplicationController {
      * @return add
      */
     @RequestMapping(value = "/new",method = RequestMethod.POST)
-    public String add(Application application){
+    public String add(Application application, Model model){
         applicationService.insert(application);
-        logger.info("添加信息");
+        Application application1 = applicationService.getById(application.getId());
+        model.addAttribute("application" ,application1);
+//        logger.info("添加信息");
         return  "add";
     }
 }

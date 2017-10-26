@@ -21,12 +21,13 @@
             <td><strong>学号</strong></td>
         </tr>
             <tr>
-                <td>${get.id}</td>
+                <td>${get.id}</td><%--get是Controller返回的model名称--%>
                 <td>${get.name}</td>
                 <td>${get.qq}</td>
                 <td>${get.onlineId}</td>
             </tr>
     </table>
+    <a href="list.jsp"/>
 </div>
 </tbody>
 </html>

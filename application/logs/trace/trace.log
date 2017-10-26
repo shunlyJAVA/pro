@@ -1,0 +1,307 @@
+2017-10-26 at 19:20:51 CST TRACE org.springframework.test.context.support.ContextLoaderUtils 262 convertContextConfigToConfigAttributesAndAddToList - Retrieved @ContextConfiguration [@org.springframework.test.context.ContextConfiguration(name=, value=[classpath:spring/spring-dao.xml, classpath:spring/spring-service.xml], classes=[], loader=interface org.springframework.test.context.ContextLoader, inheritInitializers=true, inheritLocations=true, initializers=[], locations=[classpath:spring/spring-dao.xml, classpath:spring/spring-service.xml])] for declaring class [ApplicationServiceTest].
+2017-10-26 at 19:20:51 CST TRACE org.springframework.test.context.support.ContextLoaderUtils 268 convertContextConfigToConfigAttributesAndAddToList - Resolved context configuration attributes: [ContextConfigurationAttributes@64ec96c6 declaringClass = 'ApplicationServiceTest', classes = '{}', locations = '{classpath:spring/spring-dao.xml, classpath:spring/spring-service.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-10-26 at 19:20:51 CST TRACE org.springframework.test.context.support.AbstractTestContextBootstrapper 498 resolveExplicitContextLoaderClass - Resolving ContextLoader for context configuration attributes [ContextConfigurationAttributes@64ec96c6 declaringClass = 'ApplicationServiceTest', classes = '{}', locations = '{classpath:spring/spring-dao.xml, classpath:spring/spring-service.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-10-26 at 19:20:51 CST TRACE org.springframework.test.context.support.AbstractTestContextBootstrapper 464 resolveContextLoader - Using ContextLoader class [org.springframework.test.context.support.DelegatingSmartContextLoader] for test class [ApplicationServiceTest]
+2017-10-26 at 19:20:51 CST TRACE org.springframework.test.context.support.AbstractTestContextBootstrapper 364 buildMergedContextConfiguration - Processing locations and classes for context configuration attributes [ContextConfigurationAttributes@64ec96c6 declaringClass = 'ApplicationServiceTest', classes = '{}', locations = '{classpath:spring/spring-dao.xml, classpath:spring/spring-service.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-10-26 at 19:20:51 CST TRACE org.springframework.core.io.support.SpringFactoriesLoader 97 loadFactories - Loaded [org.springframework.test.context.ContextCustomizerFactory] names: [org.springframework.test.context.web.socket.MockServerContainerContextCustomizerFactory]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.support.ApplicationContextInitializerUtils 80 resolveInitializerClasses - Processing context initializers for context configuration attributes [ContextConfigurationAttributes@64ec96c6 declaringClass = 'ApplicationServiceTest', classes = '{}', locations = '{classpath:spring/spring-dao.xml, classpath:spring/spring-service.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 162 registerTestExecutionListeners - Registering TestExecutionListener: org.springframework.test.context.web.ServletTestExecutionListener@68f1b17f
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 162 registerTestExecutionListeners - Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1722011b
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 162 registerTestExecutionListeners - Registering TestExecutionListener: org.springframework.test.context.support.DependencyInjectionTestExecutionListener@57ad2aa7
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 162 registerTestExecutionListeners - Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b3f61ff
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 162 registerTestExecutionListeners - Registering TestExecutionListener: org.springframework.test.context.transaction.TransactionalTestExecutionListener@3e2059ae
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 162 registerTestExecutionListeners - Registering TestExecutionListener: org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@398dada8
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 205 beforeTestClass - beforeTestClass(): class [ApplicationServiceTest]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.test.context.TestContextManager 236 prepareTestInstance - prepareTestInstance(): instance [ApplicationServiceTest@3b74ac8]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.beans.factory.xml.PluggableSchemaResolver 110 resolveEntity - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans.xsd]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.beans.factory.xml.PluggableSchemaResolver 110 resolveEntity - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context.xsd]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.beans.factory.xml.PluggableSchemaResolver 110 resolveEntity - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool.xsd]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.beans.factory.xml.PluggableSchemaResolver 110 resolveEntity - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans.xsd]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.beans.factory.xml.PluggableSchemaResolver 110 resolveEntity - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context.xsd]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.beans.factory.xml.PluggableSchemaResolver 110 resolveEntity - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool.xsd]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.beans.factory.xml.PluggableSchemaResolver 110 resolveEntity - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tx/spring-tx.xsd]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 426 scanCandidateComponents - Scanning file [I:\ideaPro\application\target\classes\org\shunly\application\aop\LogTime.class]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 426 scanCandidateComponents - Scanning file [I:\ideaPro\application\target\classes\org\shunly\application\controller\ApplicationController.class]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 426 scanCandidateComponents - Scanning file [I:\ideaPro\application\target\classes\org\shunly\application\dao\ApplicationMapper.class]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 426 scanCandidateComponents - Scanning file [I:\ideaPro\application\target\classes\org\shunly\application\entity\Application.class]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 449 scanCandidateComponents - Ignored because not matching any filter: file [I:\ideaPro\application\target\classes\org\shunly\application\entity\Application.class]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 426 scanCandidateComponents - Scanning file [I:\ideaPro\application\target\classes\org\shunly\application\service\ApplicationService.class]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 449 scanCandidateComponents - Ignored because not matching any filter: file [I:\ideaPro\application\target\classes\org\shunly\application\service\ApplicationService.class]
+2017-10-26 at 19:20:52 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 426 scanCandidateComponents - Scanning file [I:\ideaPro\application\target\classes\org\shunly\application\serviceImp\ApplicationServiceImp.class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.io.support.SpringFactoriesLoader 97 loadFactories - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.mybatis.spring.mapper.MapperScannerConfigurer]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.mybatis.spring.mapper.MapperScannerConfigurer]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'addToConfig' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'annotationClass' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'basePackage' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanName' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'markerInterface' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'nameGenerator' of type [org.springframework.beans.factory.support.BeanNameGenerator]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'processPropertyPlaceHolders' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSessionFactory' of type [org.apache.ibatis.session.SqlSessionFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSessionFactoryBeanName' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSessionTemplateBeanName' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 426 scanCandidateComponents - Scanning file [I:\ideaPro\application\target\classes\org\shunly\application\dao\ApplicationMapper.class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.context.support.PropertySourcesPlaceholderConfigurer]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.context.support.PropertySourcesPlaceholderConfigurer]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'appliedPropertySources' of type [org.springframework.core.env.PropertySources]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanName' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'environment' of type [org.springframework.core.env.Environment]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'fileEncoding' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'ignoreResourceNotFound' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'ignoreUnresolvablePlaceholders' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'localOverride' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'location' of type [org.springframework.core.io.Resource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'locations' of type [[Lorg.springframework.core.io.Resource;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'nullValue' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'placeholderPrefix' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'placeholderSuffix' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'properties' of type [java.util.Properties]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'propertiesArray' of type [[Ljava.util.Properties;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'propertiesPersister' of type [org.springframework.util.PropertiesPersister]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'propertySources' of type [org.springframework.core.env.PropertySources]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'trimValues' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'valueSeparator' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.driver' in PropertySource 'environmentProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.driver' in PropertySource 'systemProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.driver' in PropertySource 'systemEnvironment'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.driver' in PropertySource 'localProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.util.PropertyPlaceholderHelper 163 parseStringValue - Resolved placeholder 'jdbc.driver'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.url' in PropertySource 'environmentProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.url' in PropertySource 'systemProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.url' in PropertySource 'systemEnvironment'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.url' in PropertySource 'localProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.util.PropertyPlaceholderHelper 163 parseStringValue - Resolved placeholder 'jdbc.url'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.username' in PropertySource 'environmentProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.username' in PropertySource 'systemProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.username' in PropertySource 'systemEnvironment'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdbc.username' in PropertySource 'localProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.util.PropertyPlaceholderHelper 163 parseStringValue - Resolved placeholder 'jdbc.username'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdc.password' in PropertySource 'environmentProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdc.password' in PropertySource 'systemProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdc.password' in PropertySource 'systemEnvironment'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'jdc.password' in PropertySource 'localProperties'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.util.PropertyPlaceholderHelper 163 parseStringValue - Resolved placeholder 'jdc.password'
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'requiredParameterName' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'requiredParameterValue' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.context.annotation.CommonAnnotationBeanPostProcessor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.context.annotation.CommonAnnotationBeanPostProcessor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'alwaysUseJndiLookup' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'destroyAnnotationType' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'fallbackToDefaultTypeMatch' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'initAnnotationType' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'jndiFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'resourceFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'advisorAdapterRegistry' of type [org.springframework.aop.framework.adapter.AdvisorAdapterRegistry]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'applyCommonInterceptorsFirst' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanClassLoader' of type [java.lang.ClassLoader]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'customTargetSourceCreators' of type [[Lorg.springframework.aop.framework.autoproxy.TargetSourceCreator;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'exposeProxy' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'frozen' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'interceptorNames' of type [[Ljava.lang.String;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'opaque' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'optimize' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'proxyClassLoader' of type [java.lang.ClassLoader]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'proxyTargetClass' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.jdbc.datasource.DriverManagerDataSource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.jdbc.datasource.DriverManagerDataSource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'catalog' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'connection' of type [java.sql.Connection]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'connectionProperties' of type [java.util.Properties]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'driverClassName' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'logWriter' of type [java.io.PrintWriter]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'loginTimeout' of type [int]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'parentLogger' of type [java.util.logging.Logger]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'password' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'schema' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'url' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'username' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator 383 isInfrastructureClass - Did not attempt to auto-proxy infrastructure class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'advice' of type [org.aopalliance.aop.Advice]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'adviceBeanName' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'classFilter' of type [org.springframework.aop.ClassFilter]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'perInstance' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'pointcut' of type [org.springframework.aop.Pointcut]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionAttributeSource' of type [org.springframework.transaction.interceptor.TransactionAttributeSource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.transaction.annotation.AnnotationTransactionAttributeSource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.transaction.annotation.AnnotationTransactionAttributeSource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.mybatis.spring.SqlSessionFactoryBean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.mybatis.spring.SqlSessionFactoryBean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'cache' of type [org.apache.ibatis.cache.Cache]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'configLocation' of type [org.springframework.core.io.Resource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'configuration' of type [org.apache.ibatis.session.Configuration]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'configurationProperties' of type [java.util.Properties]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'dataSource' of type [javax.sql.DataSource]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'databaseIdProvider' of type [org.apache.ibatis.mapping.DatabaseIdProvider]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'environment' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'failFast' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'mapperLocations' of type [[Lorg.springframework.core.io.Resource;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'object' of type [org.apache.ibatis.session.SqlSessionFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'objectFactory' of type [org.apache.ibatis.reflection.factory.ObjectFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'objectType' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'objectWrapperFactory' of type [org.apache.ibatis.reflection.wrapper.ObjectWrapperFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'plugins' of type [[Lorg.apache.ibatis.plugin.Interceptor;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'singleton' of type [boolean]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSessionFactoryBuilder' of type [org.apache.ibatis.session.SqlSessionFactoryBuilder]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionFactory' of type [org.apache.ibatis.transaction.TransactionFactory]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'typeAliases' of type [[Ljava.lang.Class;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'typeAliasesPackage' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'typeAliasesSuperType' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'typeHandlers' of type [[Lorg.apache.ibatis.type.TypeHandler;]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'typeHandlersPackage' of type [java.lang.String]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'vfs' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.TypeConverterDelegate 435 doConvertValue - Converting String to [interface org.springframework.core.io.Resource] using property editor [org.springframework.core.io.ResourceEditor@11eadcba]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.TypeConverterDelegate 435 doConvertValue - Converting String to [class [Lorg.springframework.core.io.Resource;] using property editor [org.springframework.core.io.support.ResourceArrayPropertyEditor@4721d212]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.shunly.application.aop.LogTime]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.shunly.application.aop.LogTime]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:53 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.shunly.application.controller.ApplicationController]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.shunly.application.controller.ApplicationController]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.TypeConverterDelegate 435 doConvertValue - Converting String to [class java.lang.Class] using property editor [org.springframework.beans.propertyeditors.ClassEditor@759fad4]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.shunly.application.serviceImp.ApplicationServiceImp]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.shunly.application.serviceImp.ApplicationServiceImp]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'byId'
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.mybatis.spring.mapper.MapperFactoryBean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.mybatis.spring.mapper.MapperFactoryBean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'addToConfig' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'mapperInterface' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'object' of type [java.lang.Object]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'objectType' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'singleton' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSession' of type [org.apache.ibatis.session.SqlSession]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSessionFactory' of type [org.apache.ibatis.session.SqlSessionFactory]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.jdbc.datasource.DataSourceTransactionManager]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.jdbc.datasource.DataSourceTransactionManager]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'dataSource' of type [javax.sql.DataSource]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'defaultTimeout' of type [int]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'enforceReadOnly' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'failEarlyOnGlobalRollbackOnly' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'globalRollbackOnParticipationFailure' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'nestedTransactionAllowed' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'resourceFactory' of type [java.lang.Object]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'rollbackOnCommitFailure' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionSynchronization' of type [int]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionSynchronizationName' of type [java.lang.String]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'validateExistingTransaction' of type [boolean]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.transaction.event.TransactionalEventListenerFactory]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.transaction.event.TransactionalEventListenerFactory]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'order' of type [int]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator 383 isInfrastructureClass - Did not attempt to auto-proxy infrastructure class [org.springframework.transaction.interceptor.TransactionInterceptor]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [org.springframework.transaction.interceptor.TransactionInterceptor]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [org.springframework.transaction.interceptor.TransactionInterceptor]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionAttributeSource' of type [org.springframework.transaction.interceptor.TransactionAttributeSource]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionAttributeSources' of type [[Lorg.springframework.transaction.interceptor.TransactionAttributeSource;]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionAttributes' of type [java.util.Properties]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionManager' of type [org.springframework.transaction.PlatformTransactionManager]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'transactionManagerBeanName' of type [java.lang.String]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.support.PropertySourcesPlaceholderConfigurer
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.jdbc.datasource.DriverManagerDataSource
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.apache.ibatis.session.defaults.DefaultSqlSessionFactory
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.mybatis.spring.mapper.MapperScannerConfigurer
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.shunly.application.aop.LogTime
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.shunly.application.controller.ApplicationController
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.shunly.application.serviceImp.ApplicationServiceImp
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassPostProcessor
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.annotation.CommonAnnotationBeanPostProcessor
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.event.EventListenerMethodProcessor
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.event.DefaultEventListenerFactory
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.jdbc.datasource.DataSourceTransactionManager
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.transaction.event.TransactionalEventListenerFactory
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.transaction.annotation.AnnotationTransactionAttributeSource
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.transaction.interceptor.TransactionInterceptor
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.shunly.application.dao.ApplicationMapper
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.core.env.StandardEnvironment
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: java.util.Properties
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: java.util.Collections$UnmodifiableMap
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassParser$ImportStack
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.support.DelegatingMessageSource
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.event.EventListenerMethodProcessor 157 processBean - No @EventListener annotations found on bean class: org.springframework.context.event.SimpleApplicationEventMulticaster
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.support.AbstractApplicationContext 379 publishEvent - Publishing event in org.springframework.context.support.GenericApplicationContext@1b45c0e: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.GenericApplicationContext@1b45c0e: startup date [Thu Oct 26 19:20:52 CST 2017]; root of context hierarchy]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties'
+2017-10-26 at 19:20:54 CST TRACE org.springframework.core.env.PropertySourcesPropertyResolver 82 getProperty - Searching for key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemEnvironment'
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 266 <init> - Getting BeanInfo for class [ApplicationServiceTest]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 285 <init> - Caching PropertyDescriptors for class [ApplicationServiceTest]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.beans.CachedIntrospectionResults 298 <init> - Found bean property 'class' of type [java.lang.Class]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 503 prepareForBeforeCallback - beforeTestMethod(): instance [ApplicationServiceTest@3b74ac8], method [public void ApplicationServiceTest.testListApplication() throws java.lang.Exception]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 503 prepareForBeforeCallback - beforeTestExecution(): instance [ApplicationServiceTest@3b74ac8], method [public void ApplicationServiceTest.testListApplication() throws java.lang.Exception]
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==    Columns: id, name, qq, position, time, college, online_id, url, ambition, senior, info
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 1, 刘佳义, 1060015371, JAVA工程师, 20170711, 河北科技大学, 2116, http://www.jnshu.com/daily/27836?dailyType=others&total=7&page=3&uid=13457&sort=0&orderBy=3, 老大最帅, [深圳分院|内门弟子]JAVA-王蒙, 师兄，知乎
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 2, 高琳翔, 755852332, QA, 20170815, 河南科技应用工程学院, 74, http://www.jnshu.com/daily/31066?dailyType=others&total=20&page=2&uid=14241&sort=0&orderBy=3, 努力才有回报, 贾阳倩, 朋友
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 3, 张锦润, 1054905049, 产品经理, 20170810, 河南科技应用工程学院, 716, http://www.jnshu.com/daily/31081#reply, 相信自己的选择。, 韩阳, 知乎
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 4, 姚远, 283533685, JAVA工程师, 20170802, 燕山大学, 2182, http://www.jnshu.com/daily/29770?dailyType=others&total=8&page=1&uid=14229&sort=0&orderBy=3, 努力奋斗，有付出才有收获！, [北京分院|内门弟子] JAVA-刘佳义, 知乎
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 5, 刘意顺, 540603081, java, 20101111, xx大学, 2455, www.baidu.com, 走过路过不要错过, someone, 此处
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 7, s2, 2222, java, 1999999, daxue 2, 2966, #, dqdq, ni, da
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 8, s2, 2222, java, 1999999, daxue 2, 2966, #, dqdq, ni, da
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 9, s2, 2222, java, 1999999, daxue 2, 2966, #, dqdq, ni, da
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 11, 123, 21131, java, 1234, 133, 0, ssa, 111, sasa, here
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 12, 123, 21131, java, 1234, 133, 0, ssa, 111, sasa, here
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 15, null, 0, null, 0, null, 0, null, null, null, null
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 16, null, 0, null, 0, null, 0, null, null, null, null
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 17, null, 0, null, 0, null, 0, null, null, null, null
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 18, null, 0, null, 0, null, 0, null, null, null, null
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 512 prepareForAfterCallback - afterTestExecution(): instance [ApplicationServiceTest@3b74ac8], method [public void ApplicationServiceTest.testListApplication() throws java.lang.Exception], exception [null]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 512 prepareForAfterCallback - afterTestMethod(): instance [ApplicationServiceTest@3b74ac8], method [public void ApplicationServiceTest.testListApplication() throws java.lang.Exception], exception [null]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 236 prepareTestInstance - prepareTestInstance(): instance [ApplicationServiceTest@71b1a49c]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 503 prepareForBeforeCallback - beforeTestMethod(): instance [ApplicationServiceTest@71b1a49c], method [public void ApplicationServiceTest.testGetById() throws java.lang.Exception]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 503 prepareForBeforeCallback - beforeTestExecution(): instance [ApplicationServiceTest@71b1a49c], method [public void ApplicationServiceTest.testGetById() throws java.lang.Exception]
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==    Columns: id, name, qq, position, time, college, online_id, url, ambition, senior, info
+2017-10-26 at 19:20:54 CST TRACE org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 59 trace - <==        Row: 1, 刘佳义, 1060015371, JAVA工程师, 20170711, 河北科技大学, 2116, http://www.jnshu.com/daily/27836?dailyType=others&total=7&page=3&uid=13457&sort=0&orderBy=3, 老大最帅, [深圳分院|内门弟子]JAVA-王蒙, 师兄，知乎
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 512 prepareForAfterCallback - afterTestExecution(): instance [ApplicationServiceTest@71b1a49c], method [public void ApplicationServiceTest.testGetById() throws java.lang.Exception], exception [null]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 512 prepareForAfterCallback - afterTestMethod(): instance [ApplicationServiceTest@71b1a49c], method [public void ApplicationServiceTest.testGetById() throws java.lang.Exception], exception [null]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.test.context.TestContextManager 472 afterTestClass - afterTestClass(): class [ApplicationServiceTest]
+2017-10-26 at 19:20:54 CST TRACE org.springframework.context.support.AbstractApplicationContext 379 publishEvent - Publishing event in org.springframework.context.support.GenericApplicationContext@1b45c0e: org.springframework.context.event.ContextClosedEvent[source=org.springframework.context.support.GenericApplicationContext@1b45c0e: startup date [Thu Oct 26 19:20:52 CST 2017]; root of context hierarchy]
