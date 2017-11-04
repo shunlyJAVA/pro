@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+类名 -->
+<mapper namespace="org.shunly.dao.StudentMapper">
+    <insert id="insert" parameterType="Student">
+        insert into student(name,qq,position,time,college,online_id,url,ambition,senior,info,profession,completion,work_info,created_at)
+        values(#{name},#{qq},#{position},#{time},#{college},#{onlineId},
+        #{url},#{ambition},#{senior},#{info},now());
+    </insert>
+
+    <insert id="insertWork" parameterType="Student">
+        INSERT INTO student(profession,completion,work_info)
+        VALUES (#{profession},#{completion},#{work_info});
+    </insert>
+
+    <delete id="delete" parameterType="Student">
+        delete from student where id=#{id};
+    </delete>
+
+    <update id="update" parameterType="Student" >
+        update student set
+        name=#{name},qq=#{qq},position=#{position},
+        time=#{time},college=#{college},online_id=#{onlineId},url=#{url},ambition=#{ambition},senior=#{senior},info=#{info}
+        where id=#{id};
+
+    </update>
+
+    <!-- sql仅用于复用？ -->
+    <sql id="selectAll" >
+        SELECT * FROM student
+    </sql>
+
+    <select id="getById" parameterType="Student"  resultType="Student">
+        <include refid="selectAll"/>
+        where id=#{id};
+    </select>
+
+    <select id="getByName"  parameterType="Student"  resultType="Student">
+        <include refid="selectAll"/>
+        where name=#{name};
+    </select>
+
+    <select id="selectByCompletion" parameterType="Student" resultType="int">
+        SELECT COUNT(*) FROM student WHERE completion=1;
+    </select>
+
+    <select id="selectAll" parameterType="Student" resultType="int">
+        SELECT COUNT(*) FROM student;
+    </select>
+
+    <select id="listCompletion" resultType="Student" parameterType="Student">
+        <include refid="selectAll"/>
+        WHERE completion=1;
+    </select>
+
+    <select id="listStudent" parameterType="Student" resultType="Student">
+        <include refid="selectAll"/>
+    </select>
+</mapper>

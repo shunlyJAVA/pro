@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+类名 -->
+<mapper namespace="org.shunly.dao.JobMapper">
+
+    <insert id="insert" parameterType="Job">
+        insert into job(type,picture,profession.professionInfo,level,difficult,growingCircle,scarcity,salary1,salary2,salary3,tips,created_at)
+        values(#{type},#{picture},#{profession.professionInfo},#{level},#{difficult},#{growingCircle},#{scarcity},#{salary1},#{salary2},#{salary3},#{tips},created_at);
+    </insert>
+
+    <delete id="delete" parameterType="Job">
+        delete from job where id=#{id};
+    </delete>
+
+    <update id="update" parameterType="Job" >
+        update Job set
+        type=#{type}
+        where id=#{id};
+
+    </update>
+
+    <sql id="selectAll" >
+        SELECT * FROM job
+    </sql>
+
+    <select id="selectById" parameterType="Job"  resultType="Job">
+        <include refid="selectAll"/>
+        where id=#{id};
+    </select>
+
+    <select id="listJob" parameterType="Job" resultType="Job">
+        <include refid="selectAll"/>
+        WHERE type=#{type}
+    </select>
+</mapper>

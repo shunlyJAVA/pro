@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 主布局 -->
+    <definition name="base" template="/WEB-INF/jsp/base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="head" value="/WEB-INF/jsp/head.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="bottom" value="/WEB-INF/jsp/bottom.jsp"/>
+    </definition>
+    <!-- 主布局 -->
+
+    <!-- 项目 -->
+    <definition name="t10" extends="base">
+        <put-attribute name="title" value="10" />
+        <put-attribute name="body" value="/WEB-INF/jsp/t10.jsp" />
+    </definition>
+    <definition name="t11" extends="base">
+        <put-attribute name="title" value="11" />
+        <put-attribute name="body" value="/WEB-INF/jsp/t11.jsp" />
+    </definition>
+    <!--项目-->
+</tiles-definitions>

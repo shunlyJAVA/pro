@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvn="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--扫描注解-->
+    <context:component-scan base-package="org.shunly.controller"/>
+
+    <!--自动注册 DefaultAnnotationHandlerMapping和AnnotationMethodHandlerAdapter
+   提供一系列：数据绑定，数字和日期的format @NumberFormat，@DataTimeFormat,
+        xml,json默认读写支持-->
+    <mvn:annotation-driven/>
+
+    <!--使用默认servlet响应静态资源-->
+    <mvn:default-servlet-handler/>
+
+    <bean id="jspView" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+
+    <!--tiles视图解析-->
+    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" p:order="1"/>
+    <!--tile配置文件-->
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/layout.xml</value>
+            </list>
+        </property>
+    </bean>
+</beans>
+
